@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72BDAA29502BB7E1E7C5FBBA69B53B9787874946",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "72BDAA29502BB7E1E7C5FBBA69B53B9787874946" : 9223372036854775807,
+    "58609DFDB2EB0859F5D3792563D9F232E0100D95" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1E151348-B900-4E37-A9AC-E5FE9C4D1C9A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72BDAA29502BB7E1E7C5FBBA69B53B9787874946" : "PartyRockApp\/",
+    "58609DFDB2EB0859F5D3792563D9F232E0100D95" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PartyRockApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PartyRockApp\/PartyRockApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leobouts\/iOS-development",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58609DFDB2EB0859F5D3792563D9F232E0100D95"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leobouts\/PartyRockApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72BDAA29502BB7E1E7C5FBBA69B53B9787874946"
+    }
+  ]
+}
