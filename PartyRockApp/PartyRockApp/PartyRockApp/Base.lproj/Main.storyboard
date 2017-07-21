@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -156,14 +157,30 @@
                                     <constraint firstAttribute="height" constant="210" id="wCE-86-L17"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5j-QJ-z1r">
+                                <rect key="frame" x="21" y="260" width="333" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Tzr-Uk-khq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="P5j-QJ-z1r" secondAttribute="trailing" constant="5" id="FaK-LW-VXh"/>
                             <constraint firstAttribute="trailing" secondItem="h8x-8y-fxw" secondAttribute="trailing" id="G4r-tO-XoH"/>
                             <constraint firstItem="h8x-8y-fxw" firstAttribute="top" secondItem="IEC-bV-yU6" secondAttribute="top" id="O3o-9e-AsE"/>
+                            <constraint firstItem="P5j-QJ-z1r" firstAttribute="leading" secondItem="IEC-bV-yU6" secondAttribute="leadingMargin" constant="5" id="Xj0-fs-N6I"/>
+                            <constraint firstItem="P5j-QJ-z1r" firstAttribute="top" secondItem="h8x-8y-fxw" secondAttribute="bottom" constant="50" id="hPr-An-Ozl"/>
                             <constraint firstItem="h8x-8y-fxw" firstAttribute="leading" secondItem="IEC-bV-yU6" secondAttribute="leading" id="prX-QZ-f8z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="P5j-QJ-z1r" id="fyt-HV-FYS"/>
+                        <outlet property="webView" destination="h8x-8y-fxw" id="tDy-iX-D00"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWW-Y8-LmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
