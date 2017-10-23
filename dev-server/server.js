@@ -20,7 +20,7 @@ var tutorials = [
         title: "sad cooking show",
         description: "thats really sad",
         thumbnail: "https://pbs.twimg.com/profile_images/789948995183316993/POwGu01F_400x400.jpg",
-        iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Xtrsh4U_GCY" frameborder="0" allowfullscreen></iframe>'
+        iframe: '<div class="container"><iframe src="https://www.youtube.com/embed/Xtrsh4U_GCY" frameborder="0" allowfullscreen></iframe></div>'
 
     }
 ];
