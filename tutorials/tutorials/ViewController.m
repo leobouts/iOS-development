@@ -19,11 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[HTTPService instance] getTutorials:^(NSDictionary * _Nullable dataDict, NSString * _Nullable errMessage) {
+    [[HTTPService instance] getTutorials:^(NSArray * _Nullable dataArray, NSString * _Nullable errMessage) {
         
-        if (dataDict) {
+        if (dataArray) {
             
-            NSLog(@"Dictionary: %@", dataDict.debugDescription);
+            
             
         } else if (errMessage) {
             
