@@ -25,11 +25,50 @@ var tutorials = [
     }
 ];
 
+var comments = [ 
+    {
+        username: "leo942",
+        comment: "yeah really sad"
+    }
+]
+
+// app.put('/comments', function(req,res){
+
+//     var someOBJ = req.body;
+
+//     var theId = someOBJ.uniqueId;
+
+//     //talk to database, find the record by the id
+//     //then you replace the existing record with req.body
+    
+//     res.send("succes");
+    
+// });
+
+app.post('/comments', function(req, res) {
+    var comment = req.body;
+    if (comment) {
+
+        if (comment.username && comment.comment){
+            comments.push(comment);
+        } else {
+            res.send("you posted invalid data");
+        }
+    } else {
+        res.send("you post has no body");
+    }
+        console.log(comments);
+        res.send("you successfully posted a comment");
+    
+});
+
 app.get('/tutorials', function(req, res) {
 
     console.log("GET from server");
     res.send(tutorials);
 
 });
+
+
 
 app.listen(6069); //pick any port like above 3000-5000
