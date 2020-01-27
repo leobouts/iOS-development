@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scribe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-et-nKe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scribe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXD-Lg-zII">
+                                        <rect key="frame" x="163" y="16" width="50" height="24"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.16429834300000001" blue="0.27498372399999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PXD-Lg-zII" firstAttribute="centerY" secondItem="eiH-et-nKe" secondAttribute="centerY" id="Ac9-5c-Gql"/>
+                                    <constraint firstAttribute="height" constant="55" id="Cbq-bF-PJJ"/>
+                                    <constraint firstItem="PXD-Lg-zII" firstAttribute="centerX" secondItem="eiH-et-nKe" secondAttribute="centerX" id="e4Z-Ix-ydn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyi-BZ-A9G" customClass="CircleButton" customModule="Scribe" customModuleProvider="target">
+                                <rect key="frame" x="157" y="559" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.16429834300000001" blue="0.27498372399999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Li-BM-uGX"/>
+                                    <constraint firstAttribute="width" constant="60" id="RrN-IN-Asb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5au-By-d60"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; TRANSCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOv-xf-sBh">
+                                <rect key="frame" x="107" y="635" width="162" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tapp the button below to transcribe the audio embedded in this app." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vof-Ub-LHZ">
+                                <rect key="frame" x="0.0" y="75" width="375" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mda-iA-Sne">
+                                <rect key="frame" x="158.5" y="559.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="NB0-bM-eIM"/>
+                                    <constraint firstAttribute="height" constant="60" id="Y4F-WT-OcQ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOv-xf-sBh" firstAttribute="top" secondItem="pyi-BZ-A9G" secondAttribute="bottom" constant="16" id="02V-RH-UAt"/>
+                            <constraint firstItem="eiH-et-nKe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Tu-ED-hko"/>
+                            <constraint firstItem="pyi-BZ-A9G" firstAttribute="top" secondItem="vof-Ub-LHZ" secondAttribute="bottom" constant="20" id="Ahz-j6-Qqx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LOv-xf-sBh" secondAttribute="bottom" constant="8" id="BUp-iN-33L"/>
+                            <constraint firstItem="vof-Ub-LHZ" firstAttribute="top" secondItem="eiH-et-nKe" secondAttribute="bottom" constant="20" id="DUx-Wi-pXk"/>
+                            <constraint firstItem="mda-iA-Sne" firstAttribute="centerX" secondItem="LOv-xf-sBh" secondAttribute="centerX" id="PUE-32-6rx"/>
+                            <constraint firstItem="mda-iA-Sne" firstAttribute="centerY" secondItem="pyi-BZ-A9G" secondAttribute="centerY" id="S4J-pD-OeG"/>
+                            <constraint firstItem="eiH-et-nKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TLb-mV-hHB"/>
+                            <constraint firstItem="LOv-xf-sBh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VA6-Eu-WJE"/>
+                            <constraint firstItem="pyi-BZ-A9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="buG-ee-ebm"/>
+                            <constraint firstAttribute="trailing" secondItem="eiH-et-nKe" secondAttribute="trailing" id="c8I-1c-FGt"/>
+                            <constraint firstAttribute="trailing" secondItem="vof-Ub-LHZ" secondAttribute="trailing" id="eMz-1m-Gp9"/>
+                            <constraint firstItem="vof-Ub-LHZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qyM-ZB-y7n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activitySpinner" destination="mda-iA-Sne" id="Xci-wk-oLO"/>
+                        <outlet property="transcriptionTextField" destination="vof-Ub-LHZ" id="gnK-9Q-2Nd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
